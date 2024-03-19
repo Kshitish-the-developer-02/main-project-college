@@ -57,7 +57,7 @@ function Navigation() {
           to="/"
           className="flex items-center text-center transition-transform transform hover:translate-x-2"
         >
-          <AiFillHome className="mr-2 mt-[3rem]" size={26} color="black" />
+          <AiFillHome className="mr-2 mt-[3rem]" size={26} color="90EE90" />
           <span className=" font-poppins font-bold hidden nav-item-name mt-[3rem]">
             Home
           </span>{" "}
@@ -67,7 +67,7 @@ function Navigation() {
           to="/shop"
           className="flex items-center transition-transform transform hover:translate-x-2 text-center"
         >
-          <HiShoppingBag className="mr-2 mt-[3rem]" size={26} />
+          <HiShoppingBag className="mr-2 mt-[3rem]" size={26} color="#FF5733" />
           <span className="font-poppins  font-bold hidden nav-item-name mt-[3rem]">
             Shop
           </span>{" "}
@@ -75,7 +75,7 @@ function Navigation() {
 
         <Link to="/cart" className="flex relative">
           <div className="flex items-center transition-transform transform hover:translate-x-2 text-center">
-            <FaShoppingCart className="mt-[3rem] mr-2" size={26} />
+            <FaShoppingCart className="mt-[3rem] mr-2" size={26} color="#ADD8E6" />
             <span className=" font-poppins  font-bold hidden nav-item-name mt-[3rem]">
               Cart
             </span>{" "}
@@ -94,7 +94,7 @@ function Navigation() {
 
         <Link to="/favorite" className="flex relative">
           <div className="flex justify-center items-center transition-transform transform hover:translate-x-2">
-            <FaHeart className="mt-[3rem] mr-2" size={20} />
+            <FaHeart className="mt-[3rem] mr-2" size={20} color="#ffb6c1"/>
             <span className=" font-poppins  font-bold hidden nav-item-name mt-[3rem]">
               Favorites
             </span>{" "}
@@ -106,7 +106,7 @@ function Navigation() {
       <div className="relative">
         <button
           onClick={toggleDropdown}
-          className="flex items-center text-white focus:outline-none p-5 border bg-slate-200 w-full  justify-between"
+          className="flex items-center text-black focus:outline-none p-5 border bg-slate-200 w-full  justify-between"
         >
           {userInfo ? (
             <>
@@ -121,18 +121,7 @@ function Navigation() {
             <IoIosArrowDown size={25} className=" ml-3 text-black" />
           )}
         </button>
-        {/* <div>
-          {userInfo ? (
-            <>
-              {" "}
-              <h6 className="text-black font-poppins  font-bold text-[10px] ">
-                {userInfo.email}
-              </h6>
-            </>
-          ) : (
-            <></>
-          )}
-        </div> */}
+      
 
         {dropdownOpen && userInfo && (
           <ul
